@@ -10,6 +10,7 @@ The prototype is intended to support visual inspection and prioritisation of pos
 
 ## Repository Structure
 
+```text
 .
 ├── app.R
 ├── data/
@@ -20,6 +21,7 @@ The prototype is intended to support visual inspection and prioritisation of pos
 │   ├── cuci_candidate_segments.geojson
 │   └── analysed_gps_points.csv
 └── README.md
+```
 
 Suggested file roles:
 
@@ -47,8 +49,9 @@ The app automatically detects common alternatives for latitude, longitude, times
 
 The prototype uses an OSM-derived GeoPackage as the reference network. For the thesis case study, the expected file is:
 
+```text
 overijssel.gpkg
-
+```
 
 You can either upload this file through the Shiny interface or place it in the same folder as `app.R`.
 
@@ -56,6 +59,7 @@ You can either upload this file through the Shiny interface or place it in the s
 
 Install the required R packages:
 
+```r
 install.packages(c(
   "shiny",
   "readr",
@@ -65,11 +69,13 @@ install.packages(c(
   "DT",
   "dtw"
 ))
+```
 
 Run the Shiny app:
 
+```r
 shiny::runApp("app.R")
-
+```
 
 Then:
 
