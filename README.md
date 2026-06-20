@@ -70,7 +70,7 @@ overijssel-latest-free.gpkg.zip
 After downloading:
 
 1. Unzip the file.
-2. Place the extracted GeoPackage beside `app.R`, or upload it manually through the Shiny interface.
+2. Place the extracted GeoPackage beside `app.R`, or upload it manually through the Shiny interface. Uploading through the interface may fail because the file is large.
 3. If needed, rename the extracted file to:
 
 ```text
@@ -78,8 +78,6 @@ overijssel.gpkg
 ```
 
 Using the most recent Geofabrik download ensures that users can work with the latest available OpenStreetMap data. However, because OpenStreetMap is continuously updated, results may differ slightly depending on the date on which the GeoPackage was downloaded.
-
-For reproducibility, users are encouraged to record the download date of the GeoPackage when reporting or comparing results.
 
 The data is processed by Geofabrik and created by OpenStreetMap contributors. Please respect the OpenStreetMap attribution requirements and the Open Database License (ODbL 1.0).
 
