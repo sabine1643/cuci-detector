@@ -2,6 +2,9 @@
 
 This folder is intended for small anonymised sample GPS files only.
 
-Large OpenStreetMap-derived GeoPackage files, such as `overijssel.gpkg`, are not included in this repository because of file size and licensing considerations.
+## GPS input data
 
-Place `overijssel.gpkg` locally beside `app.R` or upload it through the Shiny interface when running the app.
+The app expects a cleaned CSV file containing GPS cycling traces. A small anonymised example file may be included as:
+
+```text
+sample_gps.csv
