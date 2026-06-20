@@ -45,5 +45,17 @@ docs/
 # translation temp files
 po/*~
 
-# RStudio Connect folder
+# App outputs
+outputs/*
+!outputs/.gitkeep
+
+# Large map/network data
+data/overijssel.gpkg
+*.gpkg
+*.gpkg-shm
+*.gpkg-wal
+
+# Personal/sensitive data
+data/raw/
+data/private/# RStudio Connect folder
 rsconnect/
