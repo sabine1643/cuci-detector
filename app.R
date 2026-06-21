@@ -240,7 +240,7 @@ extract_gap_lines_from_dtw <- function(raw_interp, dtw_path, distance_threshold 
   do.call(rbind, gap_lines)
 }
 
-add_repetition_counts_to_gaps <- function(gaps_sf, repeat_distance_m = 25) {
+add_repetition_counts_to_gaps <- function(gaps_sf, repeat_distance_m = 15) {
   if (is.null(gaps_sf) || nrow(gaps_sf) == 0) return(NULL)
   
   gaps_m <- st_transform(gaps_sf, 28992)
